@@ -1,3 +1,16 @@
+######################################################################
+#<
+#
+# Function: str str = p6_openssl_ciphers()
+#
+#  Returns:
+#	str - str
+#
+#>
+#/ Synopsis
+#/    Shows the supported Ciphers
+#/
+######################################################################
 p6_openssl_ciphers() {
 
     local str
