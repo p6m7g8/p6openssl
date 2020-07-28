@@ -26,11 +26,11 @@
 - p6_openssl_s_server_run(key, crt, ...)
 
 ### util.sh:
-- p6_openssl_certificate_create()
+- p6_openssl_certificate_create(key_file, csr_file, subject, [cert_exp=365])
 
 ### version.sh:
 - str str = p6_openssl_version()
 
 ### x509.sh:
-- p6_openssl_req_cert_self_signed_create(key_file, csr_file, [cert_exp=365])
+- p6_openssl_req_cert_self_signed_create(key_file, csr_file)
 
