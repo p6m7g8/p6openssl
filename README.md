@@ -8,6 +8,9 @@
 
 ### debug.sh:
 
+### req.sh:
+- p6_openssl_req_csr_create(key_file, csr_file, subject)
+
 ### s_client.sh:
 - p6_openssl_alias(host, port, ...)
 - p6_openssl_alt_name(host, port, ...)
@@ -22,6 +25,12 @@
 ### s_server.sh:
 - p6_openssl_s_server_run(key, crt, ...)
 
+### util.sh:
+- p6_openssl_certificate_create()
+
 ### version.sh:
 - str str = p6_openssl_version()
+
+### x509.sh:
+- p6_openssl_req_cert_self_signed_create(key_file, csr_file, [cert_exp=365])
 
