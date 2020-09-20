@@ -32,5 +32,5 @@
 - str str = p6_openssl_version()
 
 ### x509.sh:
-- p6_openssl_req_cert_self_signed_create(key_file, csr_file)
+- p6_openssl_req_cert_self_signed_create(key_file, csr_file, [cert_exp=365])
 
