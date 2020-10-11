@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.0.0](https://github.com/p6m7g8/p6openssl/compare/v1.0.1...v2.0.0) (2020-10-11)
+
+
+### Bug Fixes
+
+* **deps:** depends on `p6m7g8/p6common` ([#9](https://github.com/p6m7g8/p6openssl/issues/9)) ([435f959](https://github.com/p6m7g8/p6openssl/commit/435f959caf94876dad6416aeba71dea925010184))
+
 ### 1.0.1 (2020-09-20)
 
 
