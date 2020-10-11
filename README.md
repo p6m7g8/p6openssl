@@ -1,7 +1,6 @@
 ### init.zsh:
 - p6df::modules::p6openssl::deps()
 - p6df::modules::p6openssl::init()
-- p6df::modules::p6openssl::version()
 
 ### ciphers.sh:
 - str str = p6_openssl_ciphers()
