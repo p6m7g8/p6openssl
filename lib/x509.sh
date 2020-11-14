@@ -5,9 +5,9 @@
 # Function: p6_openssl_req_cert_self_signed_create(key_file, csr_file, [cert_exp=365])
 #
 #  Args:
-#	key_file - 
-#	csr_file - 
-#	OPTIONAL cert_exp -  [365]
+#	key_file -
+#	csr_file -
+#	OPTIONAL cert_exp - [365]
 #
 #>
 ######################################################################
