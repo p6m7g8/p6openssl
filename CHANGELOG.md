@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.1.0](https://github.com/p6m7g8/p6openssl/compare/v2.0.0...v2.1.0) (2020-12-06)
+
+
+### Features
+
+* **api:** centralize ::version() ([4e737f7](https://github.com/p6m7g8/p6openssl/commit/4e737f7360156e3f3b18b74a61ae17660640042c))
+* **community:** adds CODE_OF_CONDUCT ([17f56b7](https://github.com/p6m7g8/p6openssl/commit/17f56b77b2d671848780a887f04d03f838f1517d))
+* **github:** adds ISSUE_TEMPLATEs ([08e74c9](https://github.com/p6m7g8/p6openssl/commit/08e74c9175f19a93465c1f8c659a4ba615f9b52b))
+
+
+* **community:** rely on the .github/ in the org ([#16](https://github.com/p6m7g8/p6openssl/issues/16)) ([487ea6b](https://github.com/p6m7g8/p6openssl/commit/487ea6bf77d045b5c860a6b2240fa8c9c851bde7))
+* **docs:** fixes whitespace ([caa2739](https://github.com/p6m7g8/p6openssl/commit/caa2739298ab2462bdd2651d6323897305e323b3))
+* **README:** fixes module expansion, adds CodeCov and Synk badges ([#17](https://github.com/p6m7g8/p6openssl/issues/17)) ([a91d710](https://github.com/p6m7g8/p6openssl/commit/a91d7108da4c5e7ddb9c5036f113826f9278d150))
+* **README:** updates to template v2.0 ([8e2809d](https://github.com/p6m7g8/p6openssl/commit/8e2809dfc1cadaab3dd493ffe2d98f20f7e2e4d4))
+* **semantic:** no longer needed, defaults are fine ([cfcf622](https://github.com/p6m7g8/p6openssl/commit/cfcf622ace7e55a0e44aafd4db62efc4d825e2c0))
+
 ## [2.0.0](https://github.com/p6m7g8/p6openssl/compare/v1.0.1...v2.0.0) (2020-10-11)
 
 
