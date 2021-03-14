@@ -37,9 +37,9 @@ p6_openssl_s_client_connect() {
 #>
 ######################################################################
 p6_openssl_not_after() {
-    local host="$1"  # FQDN of the website
-    local port="$2"  # TCP port
-    shift 2          # additional openssl options
+    local host="$1" # FQDN of the website
+    local port="$2" # TCP port
+    shift 2         # additional openssl options
 
     p6_openssl_s_client_connect "$host" "$port" "$@" | openssl x509 -noout -enddate
 }
@@ -57,9 +57,9 @@ p6_openssl_not_after() {
 #>
 ######################################################################
 p6_openssl_not_before() {
-    local host="$1"  # FQDN of the website
-    local port="$2"  # TCP port
-    shift 2          # additional openssl options
+    local host="$1" # FQDN of the website
+    local port="$2" # TCP port
+    shift 2         # additional openssl options
 
     p6_openssl_s_client_connect "$host" "$port" "$@" | openssl x509 -noout -startdate
 }
@@ -77,9 +77,9 @@ p6_openssl_not_before() {
 #>
 ######################################################################
 p6_openssl_serial() {
-    local host="$1"  # FQDN of the website
-    local port="$2"  # TCP port
-    shift 2          # additional openssl options
+    local host="$1" # FQDN of the website
+    local port="$2" # TCP port
+    shift 2         # additional openssl options
 
     p6_openssl_s_client_connect "$host" "$port" "$@" | openssl x509 -noout -serial
 }
@@ -97,9 +97,9 @@ p6_openssl_serial() {
 #>
 ######################################################################
 p6_openssl_subject() {
-    local host="$1"  # FQDN of the website
-    local port="$2"  # TCP port
-    shift 2          # additional openssl options
+    local host="$1" # FQDN of the website
+    local port="$2" # TCP port
+    shift 2         # additional openssl options
 
     p6_openssl_s_client_connect "$host" "$port" "$@" | openssl x509 -noout -subject
 }
@@ -117,9 +117,9 @@ p6_openssl_subject() {
 #>
 ######################################################################
 p6_openssl_purpose() {
-    local host="$1"  # FQDN of the website
-    local port="$2"  # TCP port
-    shift 2          # additional openssl options
+    local host="$1" # FQDN of the website
+    local port="$2" # TCP port
+    shift 2         # additional openssl options
 
     p6_openssl_s_client_connect "$host" "$port" "$@" | openssl x509 -noout -purpose | grep "Yes"
 }
@@ -137,9 +137,9 @@ p6_openssl_purpose() {
 #>
 ######################################################################
 p6_openssl_not_purpose() {
-    local host="$1"  # FQDN of the website
-    local port="$2"  # TCP port
-    shift 2          # additional openssl options
+    local host="$1" # FQDN of the website
+    local port="$2" # TCP port
+    shift 2         # additional openssl options
 
     p6_openssl_s_client_connect "$host" "$port" "$@" | openssl x509 -noout -purpose | grep "No"
 }
@@ -157,9 +157,9 @@ p6_openssl_not_purpose() {
 #>
 ######################################################################
 p6_openssl_alias() {
-    local host="$1"  # FQDN of the website
-    local port="$2"  # TCP port
-    shift 2          # additional openssl options
+    local host="$1" # FQDN of the website
+    local port="$2" # TCP port
+    shift 2         # additional openssl options
 
     p6_openssl_s_client_connect "$host" "$port" "$@" | openssl x509 -noout -alias
 }
@@ -177,9 +177,9 @@ p6_openssl_alias() {
 #>
 ######################################################################
 p6_openssl_alt_name() {
-    local host="$1"  # FQDN of the website
-    local port="$2"  # TCP port
-    shift 2          # additional openssl options
+    local host="$1" # FQDN of the website
+    local port="$2" # TCP port
+    shift 2         # additional openssl options
 
     p6_openssl_s_client_connect "$host" "$port" "$@" | openssl x509 -noout -text | grep -A1 Alternative | tail -1 | sed -e 's, ,,g'
 }
