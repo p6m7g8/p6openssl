@@ -38,25 +38,26 @@
 
 - [Change Log](CHANGELOG.md)
 
-### Usage
+## Usage
 
-#### init.zsh:
+### p6openssl:
+
+#### p6openssl/init.zsh:
 
 - p6df::modules::p6openssl::deps()
 - p6df::modules::p6openssl::init()
 
-#### ciphers.sh:
+### ../p6openssl/lib:
+
+#### ../p6openssl/lib/ciphers.sh:
 
 - str str = p6_openssl_ciphers()
+#### ../p6openssl/lib/debug.sh:
 
-#### debug.sh:
-
-
-#### req.sh:
+#### ../p6openssl/lib/req.sh:
 
 - p6_openssl_req_csr_create(key_file, csr_file, subject)
-
-#### s_client.sh:
+#### ../p6openssl/lib/s_client.sh:
 
 - p6_openssl_alias(host, port, ...)
 - p6_openssl_alt_name(host, port, ...)
@@ -67,20 +68,16 @@
 - p6_openssl_s_client_connect(host, [port=443], ...)
 - p6_openssl_serial(host, port, ...)
 - p6_openssl_subject(host, port, ...)
-
-#### s_server.sh:
+#### ../p6openssl/lib/s_server.sh:
 
 - p6_openssl_s_server_run(key, crt, ...)
-
-#### util.sh:
+#### ../p6openssl/lib/util.sh:
 
 - p6_openssl_certificate_create(key_file, csr_file, subject, [cert_exp=365])
-
-#### version.sh:
+#### ../p6openssl/lib/version.sh:
 
 - str str = p6_openssl_version()
-
-#### x509.sh:
+#### ../p6openssl/lib/x509.sh:
 
 - p6_openssl_req_cert_self_signed_create(key_file, csr_file, [cert_exp=365])
 
